@@ -196,10 +196,12 @@ const App = () => {
               To Do List
             </Text>
             <Icon
-              name="delete"
-              size={25}
-              color="#ff7f7f"
-              onPress={clearAllTodos}
+              name="add"
+              size={28}
+              color="#fff"
+              onPress={() => {
+                setShowInput(true);
+              }}
             />
           </View>
           <FlatList
@@ -209,7 +211,7 @@ const App = () => {
             renderItem={({item}) => <ListItem todo={item} />}
           />
 
-          <TouchableOpacity
+          {/* <TouchableOpacity
             onPress={() => {
               setShowInput(true);
             }}
@@ -218,7 +220,33 @@ const App = () => {
               <Icon name="add" color="white" size={30} />
               <Text style={{color: 'white', fontSize: 18}}>Add</Text>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
+          <View
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              width: '100%',
+              flexDirection: 'row',
+            }}>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#00808090',
+                flex: 1,
+                padding: 15,
+                alignItems: 'center',
+              }}>
+              <Text>Hello</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={{
+                backgroundColor: '#798165',
+                flex: 1,
+                padding: 15,
+                alignItems: 'center',
+              }}>
+              <Text>Secound</Text>
+            </TouchableOpacity>
+          </View>
         </>
       )}
     </SafeAreaView>
