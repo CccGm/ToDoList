@@ -1,4 +1,4 @@
-package com.todolist
+package com.TodoListRemainder.DailyTaskCheckBox
 
 import android.app.Application
 import com.facebook.react.PackageList

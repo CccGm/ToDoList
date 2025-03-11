@@ -74,9 +74,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.todolist"
+    namespace "com.TodoListRemainder.DailyTaskCheckBox"
     defaultConfig {
-        applicationId "com.todolist"
+        applicationId "com.TodoListRemainder.DailyTaskCheckBox"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
